@@ -1,0 +1,7 @@
+parameters:
+#    gestor_servicio.example.class: Gestor\ServicioBundle\Example
+
+services:
+#    gestor_servicio.example:
+#        class: %gestor_servicio.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

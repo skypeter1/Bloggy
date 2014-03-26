@@ -1,0 +1,18 @@
+{# empty Twig template #}
+<h1>Listado de Articulos</h1>
+<table border=”1”>
+<tr>
+<th>ID</th>
+<th>Titulo</th>
+<th>Autor</th>
+<th>Fecha de Creacion</th>
+</tr>
+{% for articulo in articulos %}
+<tr>
+<td>{{ articulo.id }}</td>
+<td>{{ articulo.titulo }}</td>
+<td>{{ articulo.autor }}</td>
+<td>{{ articulo.creado | date("d-m-Y") }}</td>
+</tr>
+{% endfor %}
+</table>

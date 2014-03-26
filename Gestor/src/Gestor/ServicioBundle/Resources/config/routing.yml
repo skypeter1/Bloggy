@@ -1,0 +1,46 @@
+gestor_servicio_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: GestorServicioBundle:Default:index }
+login:
+    pattern: /signin
+    defaults: {_controller: GestorServicioBundle:Default:login} 
+home:
+    pattern: /home
+    defaults: {_controller: GestorServicioBundle:Default:home}
+reports:
+    pattern: /reports
+    defaults: {_controller: GestorServicioBundle:Default:reports}
+contacto:
+    pattern: /contacto
+    defaults: {_controller: GestorServicioBundle:Default:contacto}
+registro:
+    pattern: /registro
+    defaults: { _controller: GestorServicioBundle:Registro:registro }
+    
+articulo_listar:
+    pattern: /articulos/listar
+    defaults: { _controller: GestorServicioBundle:Default:listar }
+articulo_crear:
+    pattern: /articulos/crear
+    defaults: { _controller: GestorServicioBundle:Default:crear }
+articulo_editar:
+    pattern: /articulos/editar/{id}
+    defaults: { _controller: GestorServicioBundle:Default:editar }
+
+articulo_visualizar:
+    pattern: /articulos/visualizar/{id}
+    defaults: { _controller: GestorServicioBundle:Default:visualizar }
+articulo_borrar:
+    pattern: /articulos/borrar/{id}
+    defaults: { _controller: GestorServicioBundle:Default:borrar }
+articulo_dql:
+    pattern: /dql
+    defaults: { _controller: GestorServicioBundle:Default:dql }
+articulo_nuevo:
+    pattern: /articulos/new
+    defaults: { _controller: GestorServicioBundle:Default:new }
+    
+
+    
+    
+    

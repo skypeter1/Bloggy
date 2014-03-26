@@ -1,0 +1,23 @@
+{# empty Twig template #}
+{% extends "::base.html.twig" %}
+{% block title %}GestorServicioBundle:Registro:registro{% endblock %}
+{% block body %}
+<h1>Bienvenido al sistema</h1>
+<h1>Listado de Usuarios</h1>
+<table border=”1”>
+<tr>
+<th>Id</th>
+<th>Nombre del Afiliado</th>
+<th>Edad</th>
+</tr>
+{% for user in users %}
+<tr>
+<td>{{user.id}}</td>
+<td>{{user.nombres}}</td>
+<td>{{user.edad}}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+{% endblock %}
